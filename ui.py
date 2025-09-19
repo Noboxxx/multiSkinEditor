@@ -125,6 +125,7 @@ class MultiSkinEditor(QDialog):
         main_layout = QVBoxLayout(self)
         main_layout.addWidget(tab)
 
+    @chunk
     def display(self, index):
         for i in range(self.display_combo.count()):
             meshes = self.display_combo.itemData(i, Qt.ItemDataRole.UserRole)
